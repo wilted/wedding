@@ -10,124 +10,218 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Manrope:wght@300;400;500&display=swap"
+          rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<main class="invitation">
+
     <!-- HERO -->
 
     <section class="hero">
 
-        <div class="hero-content">
+        <img src="img/icons/stars.png" class="hero-stars" alt="">
 
-            <p class="hero-top">
-                UNA SERA INSIEME
+        <p class="hero-kicker">
+            UNA SERA INSIEME
+        </p>
+
+        <h1 class="hero-title">
+            <span>Елена</span>
+            <span class="ampersand">&</span>
+            <span>Константин</span>
+        </h1>
+
+        <p class="hero-date">
+            7 сентября 2027
+        </p>
+
+        <figure class="hero-illustration">
+
+            <img
+                src="img/hero/couple.png"
+                alt="Елена и Константин">
+
+        </figure>
+
+        <div class="hero-text">
+
+            <h2>
+                Дорогие друзья!
+            </h2>
+
+            <p>
+                Совсем скоро состоится один из самых важных
+                дней в нашей жизни, и мы будем счастливы,
+                если вы разделите его вместе с нами.
             </p>
 
-            <h1>
-                <span>Елена</span>
-
-                <span class="amp">&</span>
-
-                <span>Константин</span>
-            </h1>
-
-            <p class="hero-text">
-                приглашают вас разделить торжество<br>
-            </p>
-
         </div>
 
-        <div class="scroll">
-
-            ↓
-
-        </div>
+        <img src="img/icons/olive.png" class="hero-olive hero-olive-left" alt="">
+        <img src="img/icons/olive.png" class="hero-olive hero-olive-right" alt="">
 
     </section>
-
-
-
-
-
-    <!-- INVITATION -->
-
-    <section class="invitation">
-
-        <div class="overlay">
-
-            <div class="invitation-card">
-
-                <h2>Una sera insieme</h2>
-
-                <p>
-
-                    Есть вечера, которые хочется прожить не спеша.
-
-                    <br><br>
-
-                    Мы мечтаем собрать за одним столом самых близких людей
-                    и будем счастливы, если вы разделите этот день вместе с нами.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-
 
     <!-- DATE -->
 
-    <section class="date">
+   <section class="date">
 
-        <div class="date-content">
+    <img
+        src="img/icons/heart.png"
+        alt=""
+        class="date-heart">
 
-            <div class="day">
-                7
-            </div>
+    <p class="date-month">
+        СЕНТЯБРЬ
+    </p>
 
-            <div class="month">
-                сентября
-            </div>
+    <h2 class="date-number">
+        7
+    </h2>
 
-            <div class="year">
-                2027
-            </div>
+    <p class="date-year">
+        2027
+    </p>
+    <img
+    src="img/icons/stars.png"
+    alt=""
+    class="date-divider">
 
-            <div class="line"></div>
+    <p class="date-weekday">
+        вторник
+    </p>
 
-            <div class="time">
+</section>
 
-                вторник
+  <section class="location">
 
-                <span>16:00</span>
+    <figure class="location-illustration">
 
-            </div>
+        <img
+            src="img/illustrations/villa.png"
+            alt="Villa Toscana">
 
-            <div class="line"></div>
+    </figure>
 
-            <div class="place">
+    <p class="location-kicker">
+        Место
+    </p>
 
-                Villa Toscana
+    <h2 class="location-title">
+        Villa Toscana
+    </h2>
 
-                <span>Московская область</span>
+    <address class="location-address">
 
-            </div>
+        Московская область
 
-        </div>
+        <br>
 
-    </section>
+        ул. Лесная, 2А
 
-    <script src="script.js"></script>
+    </address>
+
+    <img
+        src="img/icons/olive.png"
+        alt=""
+        class="location-olive">
+
+</section>
+
+    <!-- TIMELINE -->
+
+   <section class="timeline">
+
+    <h2 class="timeline-title">
+        Распорядок дня
+    </h2>
+
+    <div class="timeline-items">
+
+        <article class="timeline-item">
+
+            <img
+                src="img/icons/aperitivo.png"
+                alt="">
+
+            <time>16:00</time>
+
+            <p>Сбор гостей</p>
+
+            <span>Aperitivo</span>
+
+        </article>
+
+        <article class="timeline-item">
+
+            <img
+                src="img/icons/rings.png"
+                alt="">
+
+            <time>17:00</time>
+
+            <p>Церемония</p>
+
+            <span>Cerimonia</span>
+
+        </article>
+
+        <article class="timeline-item">
+
+            <img
+                src="img/icons/dinner.png"
+                alt="">
+
+            <time>18:00</time>
+
+            <p>Ужин</p>
+
+            <span>Cena</span>
+
+        </article>
+
+        <article class="timeline-item">
+
+            <img
+                src="img/icons/glasses.png"
+                alt="">
+
+            <time>21:00</time>
+
+            <p>Танцы</p>
+
+            <span>Festa</span>
+
+        </article>
+
+    </div>
+
+</section>
+
+    <!-- DRESS CODE -->
+
+    <section class="dresscode"></section>
+
+    <!-- CHILDREN -->
+
+    <section class="children"></section>
+
+    <!-- GIFTS -->
+
+    <section class="gifts"></section>
+
+    <!-- RSVP -->
+
+    <section class="rsvp"></section>
+
+</main>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
