@@ -56,25 +56,17 @@ section{
 h1{
 
     font-family:"Cormorant Garamond",serif;
-
-    font-size:82px;
-
+    font-size:clamp(54px, 12vw, 82px);
     font-weight:400;
-
     line-height:1.05;
 
 }
 
 .amp{
-
     display:block;
-
-    font-size:65px;
-
+    font-size:clamp(46px, 10vw, 65px);
     margin:15px 0;
-
     font-style:italic;
-
 }
 
 .hero-text{
@@ -279,5 +271,53 @@ transform:translateY(0);
     color:#8A8178;
 
     margin-top:5px;
+
+}@media (max-width: 768px){
+
+    .hero{
+        padding:30px 24px;
+    }
+
+    .hero-top{
+        font-size:11px;
+        letter-spacing:5px;
+        margin-bottom:50px;
+    }
+
+    h1{
+        font-size:clamp(52px, 14vw, 72px);
+    }
+
+    .hero-text{
+        font-size:16px;
+        line-height:1.7;
+        margin-top:50px;
+    }
+
+    .invitation-card{
+        padding:35px 28px;
+    }
+
+    .invitation-card h2{
+        font-size:42px;
+    }
+
+    .invitation-card p{
+        font-size:16px;
+        line-height:1.8;
+    }
+
+    .day{
+        font-size:90px;
+    }
+
+    .month{
+        font-size:38px;
+    }
+
+    .time,
+    .place{
+        font-size:20px;
+    }
 
 }
