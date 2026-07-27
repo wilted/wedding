@@ -35,15 +35,13 @@ body {
    PAGE
 =========================== */
 
-.invitation{
+@media (max-width: 768px) {
 
-    width:min(100%,760px);
+    .invitation {
 
-    margin:auto;
+        padding: 50px 24px 80px;
 
-    padding:90px 45px 120px;
-
-    position:relative;
+    }
 
 }
 
@@ -64,7 +62,7 @@ body {
 
 .hero-stars{
 
-    width:34px;
+    width: 100px;
 
     display:block;
 
@@ -117,9 +115,19 @@ body {
 
 
 .hero-title span{
+    font-size:clamp(64px,10vw,110px);
+}
 
-    font-size:76px;
+.location-title{
+    font-size:clamp(42px,8vw,64px);
+}
 
+.timeline-title{
+    font-size:clamp(44px,7vw,60px);
+}
+
+.date-number{
+    font-size:clamp(140px,25vw,220px);
 }
 
 
@@ -162,7 +170,7 @@ body {
 
 .hero-illustration img{
 
-    width:430px;
+    width:900px;
 
     max-width:100%;
 
@@ -222,7 +230,7 @@ body {
 
     position:absolute;
 
-    width:82px;
+    width:300px;
 
     opacity:.8;
 
@@ -424,26 +432,18 @@ section{
 }
 
 .timeline-title{
-
-    margin:0 0 70px;
-
-    font-family:"Cormorant Garamond",serif;
-
-    font-size:52px;
-
-    font-weight:500;
-
-    color:#233654;
-
+    font-size:56px;
 }
+
+@media (max-width:768px){
 
 .timeline-items{
 
-    display:grid;
+    grid-template-columns:1fr;
 
-    grid-template-columns:repeat(4,1fr);
+    gap:70px;
 
-    gap:24px;
+}
 
 }
 
@@ -457,14 +457,11 @@ section{
 
 }
 
-.timeline-item img{
-
-    width:58px;
-
-    height:auto;
-
-    margin-bottom:22px;
-
+.timeline-item img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin-bottom: 24px;
 }
 
 .timeline-item time{
@@ -500,5 +497,310 @@ section{
     font-size:28px;
 
     color:#8a806d;
+
+}/* ===========================
+   DRESS CODE
+=========================== */
+
+.dresscode{
+
+    margin-top:180px;
+
+    text-align:center;
+
+}
+
+.dresscode-title{
+
+    margin:0;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:56px;
+
+    font-weight:500;
+
+    color:#233654;
+
+}
+
+.dresscode-olive{
+
+    width:95px;
+
+    display:block;
+
+    margin:25px auto 45px;
+
+}
+
+.dresscode-text{
+
+    width:520px;
+
+    max-width:100%;
+
+    margin:0 auto 55px;
+
+    line-height:1.8;
+
+    color:#5a6881;
+
+}
+
+.dresscode-palette{
+
+    width:430px;
+
+    max-width:100%;
+
+    display:block;
+
+    margin:auto;
+
+}
+
+.dresscode-images{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-end;
+
+    gap:80px;
+
+    margin:70px 0;
+
+}
+
+.dresscode-images img{
+
+    width:150px;
+
+}
+
+.dresscode-note{
+
+    width:520px;
+
+    max-width:100%;
+
+    margin:auto;
+
+    line-height:1.9;
+
+    color:#5d6982;
+
+}/* ===========================
+   GIFTS
+=========================== */
+
+.gifts{
+
+    margin-top:180px;
+
+    text-align:center;
+
+}
+
+.gifts-title{
+
+    margin:0;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:58px;
+
+    font-weight:500;
+
+    color:#233654;
+
+}
+
+.gifts-olive{
+
+    width:90px;
+
+    margin:28px auto 70px;
+
+    display:block;
+
+}
+
+.gift{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:55px;
+
+}
+
+.gift img{
+
+    width:150px;
+
+}
+
+.gift p{
+
+    width:360px;
+
+    max-width:100%;
+
+    line-height:1.9;
+
+    color:#56657d;
+
+    text-align:left;
+
+}
+
+.gift-separator{
+
+    width:1px;
+
+    height:90px;
+
+    background:rgba(71,98,145,.25);
+
+    margin:60px auto;
+
+}.ending{
+
+    margin:140px 0 80px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+.ending-stars{
+
+    width:42px;
+
+}
+
+.ending-heart{
+
+    width:26px;
+
+    opacity:.85;
+
+}/*=========================
+LETTER
+=========================*/
+
+.letter{
+
+    margin-top:180px;
+
+    text-align:center;
+
+}
+
+.envelope{
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:0;
+
+}
+
+.envelope img{
+
+    width:340px;
+
+    transition:.5s;
+
+}
+
+.envelope:hover img{
+
+    transform:
+        translateY(-8px)
+        rotate(-2deg)
+        scale(1.03);
+
+}
+
+.letter-message{
+
+    margin-top:40px;
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+    pointer-events:none;
+
+    transition:.5s;
+
+}
+
+.letter-message.open{
+
+    opacity:1;
+
+    transform:none;
+
+    pointer-events:auto;
+
+}
+
+.letter-message p{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:34px;
+
+    line-height:1.7;
+
+    color:#233654;
+
+}
+
+.confirm-btn{
+
+    margin-top:40px;
+
+    padding:16px 42px;
+
+    background:transparent;
+
+    border:1px solid #36507a;
+
+    border-radius:999px;
+
+    color:#36507a;
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.confirm-btn:hover{
+
+    background:#36507a;
+
+    color:white;
 
 }
